@@ -13,12 +13,9 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.drive.Drive;
 import com.google.android.gms.drive.DriveApi.ContentsResult;
 import com.google.android.gms.drive.MetadataChangeSet;
@@ -28,9 +25,7 @@ public class TakePicActivity extends BaseActivity implements ConnectionCallbacks
     private static final String TAG = "android-drive-quickstart";
     private static final int REQUEST_CODE_CAPTURE_IMAGE = 1;
     private static final int REQUEST_CODE_CREATOR = 2;
-    private static final int REQUEST_CODE_RESOLUTION = 3;
 
-    private GoogleApiClient mGoogleApiClient;
     private Bitmap mBitmapToSave;
 
 	  /**
@@ -40,7 +35,7 @@ public class TakePicActivity extends BaseActivity implements ConnectionCallbacks
         // Start by creating a new contents, and setting a callback.
         Log.i(TAG, "Creating new contents.");
         final Bitmap image = mBitmapToSave;
-        Drive.DriveApi.newContents(mGoogleApiClient).setResultCallback(new ResultCallback<ContentsResult>() {
+        Drive.DriveApi.newContents(getGoogleApiClient()).setResultCallback(new ResultCallback<ContentsResult>() {
 
             @Override
             public void onResult(ContentsResult result) {
@@ -72,10 +67,11 @@ public class TakePicActivity extends BaseActivity implements ConnectionCallbacks
                         .newCreateFileActivityBuilder()
                         .setInitialMetadata(metadataChangeSet)
                         .setInitialContents(result.getContents())
-                        .build(mGoogleApiClient);
+                        .build(getGoogleApiClient());
                 try {
                     startIntentSenderForResult(
                             intentSender, REQUEST_CODE_CREATOR, null, 0, 0, 0);
+                    finish();
                 } catch (SendIntentException e) {
                     Log.i(TAG, "Failed to launch file chooser.");
                 }
