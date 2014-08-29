@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -13,4 +14,32 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/button_viewfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewFolder"
+        android:text="@string/button_viewfolder" />
+
+    <Button
+        android:id="@+id/button_createfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createFile"
+        android:text="@string/button_createfile" />
+
+    <Button
+        android:id="@+id/button_takepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="takePic"
+        android:text="@string/button_takepic" />
+
+    <Button
+        android:id="@+id/button_viewpics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewPics"
+        android:text="@string/button_viewpics" />
+
+</LinearLayout>

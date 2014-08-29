@@ -2,7 +2,16 @@
 <resources>
 
     <string name="app_name">Cloudy</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello Google Drive!</string>
+    <string name="title_activity_create_file">CreateFileActivity</string>
+    <string name="title_activity_view_folder">ViewFolderActivity</string>
+    <string name="button_viewfolder">View Folder Contents</string>
+    <string name="button_createfile">Create a File</string>
+    <string name="file_created">Create a File</string>
+    <string name="title_activity_take_pic">TakePicActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="button_takepic">Take Picture</string>
+    <string name="button_viewpics">View Pictures</string>
+    <string name="title_activity_view_pics">ViewPics</string>
 
 </resources>

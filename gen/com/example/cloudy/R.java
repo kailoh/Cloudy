@@ -407,8 +407,12 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f02001e;
     }
     public static final class id {
-        public static final int action_settings=0x7f070014;
+        public static final int action_settings=0x7f070019;
         public static final int book_now=0x7f070010;
+        public static final int button_createfile=0x7f070015;
+        public static final int button_takepic=0x7f070016;
+        public static final int button_viewfolder=0x7f070014;
+        public static final int button_viewpics=0x7f070017;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
         public static final int buy_with_google=0x7f07000e;
@@ -417,6 +421,7 @@ containing a value of this type.
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
+        public static final int listViewResults=0x7f070018;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
@@ -433,14 +438,23 @@ containing a value of this type.
         public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_create_file=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_take_pic=0x7f030002;
+        public static final int activity_view_folder=0x7f030003;
+        public static final int activity_view_pics=0x7f030004;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int take_pic=0x7f0a0000;
+        public static final int view_pics=0x7f0a0001;
     }
     public static final class string {
-        public static final int action_settings=0x7f06001c;
+        public static final int action_settings=0x7f060022;
         public static final int app_name=0x7f06001a;
+        public static final int button_createfile=0x7f06001f;
+        public static final int button_takepic=0x7f060023;
+        public static final int button_viewfolder=0x7f06001e;
+        public static final int button_viewpics=0x7f060024;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -530,7 +544,12 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060018;
+        public static final int file_created=0x7f060020;
         public static final int hello_world=0x7f06001b;
+        public static final int title_activity_create_file=0x7f06001c;
+        public static final int title_activity_take_pic=0x7f060021;
+        public static final int title_activity_view_folder=0x7f06001d;
+        public static final int title_activity_view_pics=0x7f060025;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

@@ -34,23 +34,8 @@ public abstract class BaseActivity extends Activity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
-    private static final String TAG = "BaseDriveActivity";
+    private static final String TAG = "BaseActivity";
 
-    /**
-     * DriveId of an existing folder to be used as a parent folder in
-     * folder operations samples.
-     */
-    public static final String EXISTING_FOLDER_ID = "0AHUJkrP5bHvXUk9PVA";
-
-    /**
-     * DriveId of an existing file to be used in file operation samples..
-     */
-    public static final String EXISTING_FILE_ID = "0ByfSjdPVs9MZTHBmMVdSeWxaNTg";
-
-    /**
-     * Extra for account name.
-     */
-    protected static final String EXTRA_ACCOUNT_NAME = "account_name";
 
     /**
      * Request code for auto Google Play Services error resolution.
@@ -81,7 +66,7 @@ public abstract class BaseActivity extends Activity implements
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addApi(Drive.API)
                     .addScope(Drive.SCOPE_FILE)
-                    .addScope(Drive.SCOPE_APPFOLDER) // required for App Folder sample
+                    .addScope(Drive.SCOPE_APPFOLDER) 
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .build();

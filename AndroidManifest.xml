@@ -3,6 +3,9 @@
     package="com.example.cloudy"
     android:versionCode="1"
     android:versionName="1.0" >
+    
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -26,6 +29,23 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".CreateFileActivity"
+            android:label="@string/title_activity_create_file" >
+        </activity>
+        <activity
+            android:name=".ViewFolderActivity"
+            android:label="@string/title_activity_view_folder" >
+        </activity>
+        <activity
+            android:name=".TakePicActivity"
+            android:label="@string/title_activity_take_pic" >
+        </activity>
+        <activity
+            android:name=".ViewPicsActivity"
+            android:label="@string/title_activity_view_pics" >
+        </activity>
     </application>
 
 </manifest>
