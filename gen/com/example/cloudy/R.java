@@ -339,8 +339,10 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f050006;
         public static final int common_signin_btn_light_text_focused=0x7f050007;
         public static final int common_signin_btn_light_text_pressed=0x7f050005;
-        public static final int common_signin_btn_text_dark=0x7f050017;
-        public static final int common_signin_btn_text_light=0x7f050018;
+        public static final int common_signin_btn_text_dark=0x7f05001a;
+        public static final int common_signin_btn_text_light=0x7f05001b;
+        public static final int list_divider=0x7f050019;
+        public static final int overlay_selector_pressed=0x7f050017;
         public static final int wallet_bright_foreground_disabled_holo_light=0x7f05000f;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
@@ -359,8 +361,9 @@ containing a value of this type.
         public static final int wallet_hint_foreground_holo_light=0x7f050011;
         public static final int wallet_holo_blue_light=0x7f050015;
         public static final int wallet_link_text_light=0x7f050016;
-        public static final int wallet_primary_text_holo_light=0x7f050019;
-        public static final int wallet_secondary_text_holo_dark=0x7f05001a;
+        public static final int wallet_primary_text_holo_light=0x7f05001c;
+        public static final int wallet_secondary_text_holo_dark=0x7f05001d;
+        public static final int window_background=0x7f050018;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -372,6 +375,7 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f090000;
         public static final int activity_vertical_margin=0x7f090001;
+        public static final int faux_action_bar_size=0x7f090002;
     }
     public static final class drawable {
         public static final int common_signin_btn_icon_dark=0x7f020000;
@@ -398,16 +402,24 @@ containing a value of this type.
         public static final int common_signin_btn_text_normal_light=0x7f020015;
         public static final int common_signin_btn_text_pressed_dark=0x7f020016;
         public static final int common_signin_btn_text_pressed_light=0x7f020017;
-        public static final int ic_launcher=0x7f020018;
-        public static final int ic_plusone_medium_off_client=0x7f020019;
-        public static final int ic_plusone_small_off_client=0x7f02001a;
-        public static final int ic_plusone_standard_off_client=0x7f02001b;
-        public static final int ic_plusone_tall_off_client=0x7f02001c;
-        public static final int powered_by_google_dark=0x7f02001d;
-        public static final int powered_by_google_light=0x7f02001e;
+        public static final int error=0x7f020018;
+        public static final int ic_launcher=0x7f020019;
+        public static final int ic_plusone_medium_off_client=0x7f02001a;
+        public static final int ic_plusone_small_off_client=0x7f02001b;
+        public static final int ic_plusone_standard_off_client=0x7f02001c;
+        public static final int ic_plusone_tall_off_client=0x7f02001d;
+        public static final int list_focused=0x7f02001e;
+        public static final int list_pressed=0x7f02001f;
+        public static final int list_selector=0x7f020020;
+        public static final int list_selector_disabled=0x7f020021;
+        public static final int overlay_selector=0x7f020022;
+        public static final int placeholder=0x7f020023;
+        public static final int powered_by_google_dark=0x7f020024;
+        public static final int powered_by_google_light=0x7f020025;
     }
     public static final class id {
-        public static final int action_settings=0x7f070019;
+        public static final int action_settings=0x7f07001d;
+        public static final int activity_list=0x7f07001b;
         public static final int book_now=0x7f070010;
         public static final int button_createfile=0x7f070015;
         public static final int button_takepic=0x7f070016;
@@ -418,6 +430,7 @@ containing a value of this type.
         public static final int buy_with_google=0x7f07000e;
         public static final int classic=0x7f070011;
         public static final int grayscale=0x7f070012;
+        public static final int grid_view=0x7f07001c;
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
@@ -426,7 +439,9 @@ containing a value of this type.
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
+        public static final int picsListViewResults=0x7f070019;
         public static final int production=0x7f070007;
+        public static final int sample_content=0x7f07001a;
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
         public static final int selectionDetails=0x7f07000b;
@@ -443,6 +458,9 @@ containing a value of this type.
         public static final int activity_take_pic=0x7f030002;
         public static final int activity_view_folder=0x7f030003;
         public static final int activity_view_pics=0x7f030004;
+        public static final int picasso_sample_activity=0x7f030005;
+        public static final int picasso_sample_activity_item=0x7f030006;
+        public static final int sample_gridview_activity=0x7f030007;
     }
     public static final class menu {
         public static final int take_pic=0x7f0a0000;
@@ -592,6 +610,13 @@ containing a value of this type.
     
          */
         public static final int WalletFragmentDefaultStyle=0x7f040004;
+        public static final int Widget_PicassoSample_ActionBarButton=0x7f040009;
+        public static final int Widget_PicassoSample_ActionBarTitle=0x7f040008;
+        public static final int Widget_PicassoSample_DescriptionText=0x7f04000d;
+        public static final int Widget_PicassoSample_DescriptionUrl=0x7f04000c;
+        public static final int Widget_PicassoSample_ListItem=0x7f04000b;
+        public static final int Widget_PicassoSample_ListView=0x7f04000a;
+        public static final int Widget_PicassoSample_Overlay=0x7f040007;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.

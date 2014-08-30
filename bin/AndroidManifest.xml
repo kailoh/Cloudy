@@ -46,6 +46,12 @@
             android:name=".ViewPicsActivity"
             android:label="@string/title_activity_view_pics" >
         </activity>
+                <activity
+            android:name=".SampleGridViewActivity"
+            android:label="@string/title_activity_view_pics" >
+        </activity>
+        
+        
     </application>
 
 </manifest>
