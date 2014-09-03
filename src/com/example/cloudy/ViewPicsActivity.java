@@ -1,5 +1,7 @@
 package com.example.cloudy;
 
+import java.util.Iterator;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
@@ -8,6 +10,8 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.drive.Drive;
 import com.google.android.gms.drive.DriveApi.MetadataBufferResult;
 import com.google.android.gms.drive.DriveFolder;
+import com.google.android.gms.drive.Metadata;
+import com.google.android.gms.drive.MetadataBuffer;
 import com.google.android.gms.drive.query.Filters;
 import com.google.android.gms.drive.query.Query;
 import com.google.android.gms.drive.query.SearchableField;
@@ -44,6 +48,15 @@ public class ViewPicsActivity extends BaseActivity {
 				return;
 			}
 			mResultsAdapter.clear();
+			MetadataBuffer buffer = result.getMetadataBuffer();
+			Log.e(TAG, "size: " + buffer.getCount());
+			Iterator<Metadata> iterator = buffer.iterator();
+			while (iterator.hasNext()) {
+				Metadata m = iterator.next();
+				Log.e(TAG, "Web Content Link: " + m.getWebContentLink());
+			}
+			
+			
 			mResultsAdapter.append(result.getMetadataBuffer());
 			showMessage("Successfully listed files.");
 		}
